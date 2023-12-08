@@ -1,0 +1,424 @@
+.admin__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    background-color: floralwhite;
+    height: 100px;
+}
+.admin__header__logo{
+    margin-left: 20px;
+
+}
+.admin__header__search{
+
+}
+.admin__header__logoadmin-admin{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+}
+.admin__header__logoadmin{
+    width: 30px;
+    height: 30px;
+}
+.admin__header__admin{
+
+}
+.admin__header__search__input{
+    width: 500px;
+    height: 30px;
+}
+.admin__content{
+    display: flex;
+
+}
+.admin__menu{
+
+}
+.admin__goods{
+    
+}
+.admin__goods__button-add{
+
+}
+.title{
+
+}
+.product__img{
+    width: 100px;
+    height: 100px;
+}
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+.admin__header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #f8f8f8; /* Màu nền header */
+height: 100px;
+padding: 0 20px;
+}
+
+.admin__header__logo img {
+max-height: 80px; /* Giảm kích thước logo để vừa với header */
+}
+
+.admin__header__search__input {
+width: 300px;
+height: 30px;
+border: 1px solid #ccc; /* Viền ô tìm kiếm */
+border-radius: 5px;
+padding: 5px;
+}
+
+.admin__header__logoadmin img {
+width: 40px;
+height: 40px;
+border-radius: 50%; /* Bo góc hình ảnh avatar */
+}
+
+.admin__menu {
+width: 200px; /* Đặt chiều rộng của menu */
+background-color: #333; /* Màu nền menu */
+color: #fff; /* Màu chữ trắng */
+padding: 20px;
+}
+
+.admin__menu h1 {
+color: #fff; /* Màu chữ trắng cho tiêu đề menu */
+}
+
+.admin__menu a {
+color: #fff; /* Màu chữ trắng cho các liên kết */
+text-decoration: none; /* Loại bỏ gạch chân liên kết */
+display: block;
+margin-bottom: 10px;
+}
+
+.admin__goods {
+padding: 20px;
+}
+
+.admin__goods__button-add {
+background-color: #4caf50; /* Màu nền nút thêm sản phẩm */
+color: #fff; /* Màu chữ trắng */
+padding: 10px;
+text-decoration: none; /* Loại bỏ gạch chân liên kết */
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.admin__goods__button-add:hover {
+background-color: #45a049; /* Màu nền nút thêm sản phẩm khi hover */
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+.title, .product {
+background-color: #f2f2f2; /* Màu nền các hàng */
+}
+
+th, td {
+padding: 15px;
+text-align: left;
+border-bottom: 1px solid #ddd; /* Đường kẻ dưới mỗi hàng */
+}
+
+.product__img {
+max-width: 80px; /* Giảm kích thước hình ảnh sản phẩm */
+max-height: 80px;
+border-radius: 5px;
+}
+
+.operation button {
+margin-right: 5px; /* Khoảng cách giữa nút Sửa và Xóa */
+}
+
+.operation button a {
+color: #333; /* Màu chữ cho nút Sửa và Xóa */
+text-decoration: none;
+}
+
+.operation button:hover {
+background-color: #ddd; /* Màu nền khi hover */
+}
+.table{
+margin-left: 100px;
+}
+
+.admin__header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: #f8f8f8;
+height: 100px;
+padding: 0 20px;
+}
+
+.admin__header__logo img {
+max-height: 80px;
+}
+
+.admin__header__search__input {
+width: 300px;
+height: 30px;
+border: 1px solid #ccc;
+border-radius: 5px;
+padding: 5px;
+}
+
+.admin__header__logoadmin img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+
+.admin__menu {
+width: 200px;
+background-color: #333;
+color: #fff;
+padding: 20px;
+}
+
+.admin__menu h1 {
+color: #fff;
+}
+
+.admin__menu a {
+color: #fff;
+text-decoration: none;
+display: block;
+margin-bottom: 10px;
+}
+
+.admin__goods {
+padding: 20px;
+}
+
+.admin__goods__button-add {
+background-color: #4caf50;
+color: #fff;
+padding: 10px;
+text-decoration: none;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.admin__goods__button-add:hover {
+background-color: #45a049;
+}
+
+.table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+}
+
+.title, .product {
+background-color: #f2f2f2;
+}
+
+th, td {
+padding: 15px;
+text-align: left;
+border-bottom: 1px solid #ddd;
+}
+
+.product__img {
+max-width: 80px;
+max-height: 80px;
+border-radius: 5px;
+}
+
+.operation button {
+margin-right: 5px;
+}
+
+.operation button a {
+color: #333;
+text-decoration: none;
+}
+
+.operation button:hover {
+background-color: #ddd;
+}
+
+.pagination {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+margin-left: 150px;
+margin-bottom: 30px;
+}
+
+.pagination a {
+color: #333;
+padding: 8px 16px;
+text-decoration: none;
+border: 1px solid #ddd;
+margin: 0 4px;
+border-radius: 4px;
+}
+
+.pagination a:hover {
+background-color: #ddd;
+}
+.admin__menu__MENU{
+margin-bottom: 20px;
+}
+.admin__menu a {
+color: #fff;
+text-decoration: none;
+display: block;
+margin-bottom: 10px;
+transition: background-color 0.3s; 
+}
+
+.admin__menu a:hover {
+background-color: #555; 
+}
+.admin__content {
+    display: flex;
+}
+
+.addgoods {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.addgoods__input {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.container button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #555;
+}
+ul,li{
+    margin-top: 10px;
+    margin-bottom: 5px; 
+    list-style: none;
+}
+.addgoods__select__1{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+.addgoods__select__2{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+#imageContainer {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            position: relative;
+        }
+
+        #imagePreview {
+            max-width: 100%;
+            max-height: 100%;
+            display: block;
+            margin: auto;
+        }
+
+        .statistical {
+            margin-left: 20px;
+        
+        }
+        
+        .statistical__header {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .statistical__date {
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            margin-right: 5px;
+        }
+        
+        .statistical__tk {
+            background-color: #45a049;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+        }
+        #loaiSp {
+            display: none;
+        }
+        
+        #loai:checked ~ #loaiSp {
+            display: inline-block;
+        }
+        
+        #loai:checked ~ #tenSp {
+            display: none;
+        }
+        .statistical__header__input  {
+            width: 250px;
+            height: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+            display: block;
+        }
+        .statistical__header__choose{
+            width: 261px;
+            height: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 5px;
+        
+        }
+        .statistical__header__div{
+            margin-right: 10px;
+        }
+        .admin__header__search__button{
+            width: 45px;
+            height: 40px;
+            margin-right: 25px;
+            padding-left: 20px;
+            padding-right: 40px;
+            background-color: #4caf50;
+            border-radius: 3px;
+            cursor: pointer;
+        }

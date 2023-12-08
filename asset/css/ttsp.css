@@ -1,0 +1,53 @@
+.production_deltals{
+    display: flex;
+    padding-bottom: 100px;
+ }
+ .production_deltals__img{
+     width: 50;
+     padding-left: 50px;
+     padding-top: 30px;
+ }
+ .production_deltals__tittle{
+     color: rgb(0, 0, 0.05);
+     font-size: 30px;
+ }
+ .production_deltal__message--messTitle{
+     text-align: center;
+     font-size: 25px;
+ }
+ .production_deltals__message-subheading{
+     background-color: #9f9b9b;
+     font-size: 20px;
+ }
+ .production_deltal_infomation-input--ip{
+     width: 700px;
+     height: 50px;
+     margin-bottom: 40px;
+     
+ }
+ .production_deltal__infomation-tittle{
+     font-size: 30px;
+     margin-bottom: 40px;
+     
+ }
+ .production_deltal__infomation{
+     padding-left: 110px;
+     padding-top: 20px;
+ }
+ .production_deltals__tittle{
+    text-align: center;
+ }
+
+ .btn--Success
+ {
+    padding: 10px 40px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    text-decoration: none;
+ }
+
+ .btn--Success:hover
+ {
+    background-color: brown;
+ }

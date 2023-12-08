@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./asset/responsive.css">
+    <link rel="stylesheet" href="./asset/css/admin.css">
+</head>
+<body>
+    <div class="admin__content">
+        <div class="admin__menu">
+            <h1 class="admin__menu__MENU">MENU</h1>
+            <div>
+                <a href="admin.html">Sản phẩm</a>
+            </div>
+            <div>
+                <a href="donhang.html">Đơn hàng</a>
+            </div>
+            <div>
+                <a href="khachhang.html">Người dùng</a>
+            </div>
+            <div>
+                <a href="thongke.html">Thống kê</a>
+            </div>
+        </div>
+
+        <div class="addgoods">
+            <div>
+                <label for="imageInput">Ảnh sản phẩm:</label>
+                <input type="file" id="imageInput" name="image" accept="image/*" style="display: none;">
+                <button onclick="selectImage()">Sửa ảnh</button>
+                <button onclick="deleteImage()">Xóa ảnh</button>
+            </div>
+            <div id="imageContainer">
+                <img id="imagePreview" src="./asset/anh/Samsung Galaxy a54.jpg" alt="Ảnh sản phẩm">
+            </div>
+        
+                <div class="product-description">
+                    <ul>
+                        <li>Tên sản phẩm:<input type="text" class="addgoods__input" value="Samsung galaxy Z Flip5 5G 256GB" > </li>
+                        <li>        
+                            <div >
+                            <label for="product_brand" class="addgoods__select__1">Chọn hãng:</label>
+                            <select name="product_brand" id="product_brand" class="addgoods__select__2">
+                                <option value="samsung">Samsung</option>
+                                <option value="xiaomi">Xiaomi</option>
+                            </select>
+                             </div>
+                        </li>
+                        <li>Thiết kế</li>
+                        <ul>
+                          <li>Kích thước: <input type="text" class="addgoods__input" value="6.7 inch"></li>
+                          <li>Trọng lượng: <input type="text" class="addgoods__input" value="180g"> </li>
+                          <li>Chất liệu:  <input type="text" class="addgoods__input" value="Khung kim loại, mặt lưng kính"></li>
+                          <li>Màu sắc:  <input type="text" class="addgoods__input" value="Xanh, đen, trắng"></li>
+                        </ul>
+                        <li>Hiệu năng</li>
+                        <ul>
+                          <li>CPU:  <input type="text" class="addgoods__input" value="Snapdragon 8 Gen 2"></li>
+                          <li>GPU: <input type="text" class="addgoods__input" value="Adreno 740"> </li>
+                          <li>RAM:  <input type="text" class="addgoods__input" value="12GB/16GB/24GB"></li>
+                          <li>Bộ nhớ trong: <input type="text" class="addgoods__input" value="256GB/512GB/1TB"></li>
+                        </ul>
+                        <li>Camera</li>
+                        <ul>
+                          <li>Camera sau:  <input type="text" class="addgoods__input" value="50MP + 12MP + 10MP + 10MP"></li>
+                          <li>Camera trước:  <input type="text" class="addgoods__input" value="40MP"></li>
+                          <li>Chế độ chụp ảnh: <input type="text" class="addgoods__input" value="Phổ biến, chân dung, phong cảnh, đêm, v.v"> </li>
+                        </ul>
+                        <li>Pin và sạc</li>
+                        <ul>
+                          <li>Dung lượng pin: <input type="text" class="addgoods__input" value="5000mAh"> </li>
+                          <li>Thời gian sử dụng:  <input type="text" class="addgoods__input" value="Lên đến 2 ngày"></li>
+                          <li>Công nghệ sạc:  <input type="text" class="addgoods__input" value="Sạc nhanh 200W"></li>
+                        </ul>
+                        <li>Giá bán</li>
+                        <ul>
+                          <li>Giá bán: <input type="text" class="addgoods__input" value="15.990.000đ"> </li>
+                          <li>Khuyến mãi:  <input type="text" class="addgoods__input" value="Giảm 5% khi mua Online"></li>
+                        </ul>
+                    <div class="container">
+                        <a href="admin.html"><button>Hủy</button></a>
+                        <a href="admin.html"><button onclick="addgoods__notifi()">Cập nhật</button></a>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <script>
+        function selectImage() {
+            var input = document.getElementById('imageInput');
+            input.click();
+            input.addEventListener('change', previewImage);
+        }
+
+        function deleteImage() {
+    var imageContainer = document.getElementById('imageContainer');
+    var imagePreview = document.getElementById('imagePreview');
+    var input = document.getElementById('imageInput');
+
+    // Set the image source to an empty string
+    imagePreview.src = '';
+
+    // Hide the image container when there is no image
+    if (imagePreview.src === '') {
+        imageContainer.style.display = 'none';
+    } else {
+        imageContainer.style.display = 'block';
+    }
+
+    input.value = ''; // Clear the selected file
+}
+        function previewImage() {
+            var input = document.getElementById('imageInput');
+            var imageContainer = document.getElementById('imageContainer');
+            var imagePreview = document.getElementById('imagePreview');
+
+            var file = input.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                    imageContainer.style.display = 'block';
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.src = "./asset/anh/Samsung Galaxy a54.jpg";
+                imageContainer.style.display = 'block';
+            }
+        }
+
+        function addgoods__notifi() {
+            window.alert("Cập nhật sản phẩm thành công");
+        }
+    </script>
+</body>
+</html>

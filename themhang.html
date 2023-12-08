@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./asset/responsive.css">
+    <link rel="stylesheet" href="./asset/css/admin.css">
+</head>
+<body>
+    <div class="admin__header">
+        <div class="admin__header__logo">
+            <a href="admin.html"><img src="./asset/anh/logo-text.png" alt=""></a>
+            
+            <div class="admin__header__search">
+                <input type="text" placeholder="Tên sản phẩm" class="admin__header__search__input"> 
+                <button onclick="document.location='admin.html'" class="admin__header__search__button">
+                    <i class="header__search-btn-icon-search ti-search"></i>
+
+                </button>
+            </div>
+
+        </div>
+            
+            <div class="admin__header__logoadmin-admin">
+                <img src="./asset/anh/avatar.jpg" alt="" class="admin__header__logoadmin">
+                <div class="admin__header__admin">Admin</div>
+            </div>
+    </div>
+    <div class="admin__content">
+        <div class="admin__menu">
+            <h1 class="admin__menu__MENU">MENU</h1>
+            <div>
+                <a href="admin.html">Sản phẩm</a>
+            </div>
+            <div>
+                <a href="donhang.html">Đơn hàng</a>
+            </div>
+            <div>
+                <a href="khachhang.html">Người dùng</a>
+            </div>
+            <div>
+                <a href="thongke.html">Thống kê</a>
+            </div>
+        </div>
+    
+    
+    <div class="addgoods">
+        <div>
+            <label for="imageInput">Ảnh sản phẩm:</label>
+            <input type="file" id="imageInput" name="image" accept="image/*" onchange="previewImage()">
+        </div>
+    
+        <div id="imageContainer">
+            <img id="imagePreview" src="#" alt="Ảnh sản phẩm">
+        </div>
+    
+            <div class="product-description">
+                <ul>
+                    <li>Tên sản phẩm:<input type="text" class="addgoods__input"></li>
+                    <li>        
+                        <div >
+                        <label for="product_brand" class="addgoods__select__1">Chọn hãng:</label>
+                        <select name="product_brand" id="product_brand" class="addgoods__select__2">
+                            <option value="samsung">Samsung</option>
+                            <option value="xiaomi">Xiaomi</option>
+                        </select>
+                         </div>
+                    </li>
+                    <li>Thiết kế</li>
+                    <ul>
+                      <li>Kích thước: <input type="text" class="addgoods__input"></li>
+                      <li>Trọng lượng: <input type="text" class="addgoods__input"> </li>
+                      <li>Chất liệu:  <input type="text" class="addgoods__input"></li>
+                      <li>Màu sắc:  <input type="text" class="addgoods__input"></li>
+                    </ul>
+                    <li>Hiệu năng</li>
+                    <ul>
+                      <li>CPU:  <input type="text" class="addgoods__input"></li>
+                      <li>GPU: <input type="text" class="addgoods__input"> </li>
+                      <li>RAM:  <input type="text" class="addgoods__input"></li>
+                      <li>Bộ nhớ trong: <input type="text" class="addgoods__input"> </li>
+                    </ul>
+                    <li>Camera</li>
+                    <ul>
+                      <li>Camera sau:  <input type="text" class="addgoods__input"></li>
+                      <li>Camera trước:  <input type="text" class="addgoods__input"></li>
+                      <li>Chế độ chụp ảnh: <input type="text" class="addgoods__input"> </li>
+                    </ul>
+                    <li>Pin và sạc</li>
+                    <ul>
+                      <li>Dung lượng pin: <input type="text" class="addgoods__input"> </li>
+                      <li>Thời gian sử dụng:  <input type="text" class="addgoods__input"></li>
+                      <li>Công nghệ sạc:  <input type="text" class="addgoods__input"></li>
+                    </ul>
+                    <li>Giá bán</li>
+                    <ul>
+                      <li>Giá bán: <input type="text" class="addgoods__input"> </li>
+                      <li>Khuyến mãi:  <input type="text" class="addgoods__input"></li>
+                    </ul>
+                <div class="container">
+                    <a href="admin.html"><button>Hủy</button></a>
+                    <a href="admin.html"><button onclick="addgoods__notifi()">Thêm sản phẩm</button></a>
+                </div>
+            </div>
+    </div>
+
+
+</div>
+    <script>
+function addgoods__notifi() {
+    window.alert("Thêm sản phẩm thành công");
+    }
+    function previewImage() {
+            var input = document.getElementById('imageInput');
+            var imageContainer = document.getElementById('imageContainer');
+            var imagePreview = document.getElementById('imagePreview');
+
+            var file = input.files[0];
+
+            if (file) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    imagePreview.src = e.target.result;
+                    imageContainer.style.display = 'block';
+                };
+
+                reader.readAsDataURL(file);
+            } else {
+                imagePreview.src = '#';
+                imageContainer.style.display = 'none';
+            }
+        }
+
+    </script>
+
+</body>
+</html>

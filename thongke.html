@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./asset/responsive.css">
+    <link rel="stylesheet" href="./asset/css/admin.css">
+<style>
+
+</style>
+</head>
+<body>
+        <div class="admin__header">
+        <div class="admin__header__logo">
+            <a href="admin.html"><img src="./asset/anh/logo-text.png" alt=""></a>
+        </div>
+        <div class="admin__header__search">
+            <input type="text" placeholder="Tên sản phẩm" class="admin__header__search__input"> 
+            <button onclick="document.location='admin.html'" class="admin__header__search__button">
+                <i class="header__search-btn-icon-search ti-search"></i>
+
+            </button>
+        </div>
+            
+            <div class="admin__header__logoadmin-admin">
+                <img src="./asset/anh/avatar.jpg" alt="" class="admin__header__logoadmin">
+                <div class="admin__header__admin">Admin</div>
+            </div>
+    </div>
+    <div class="admin__content">
+        <div class="admin__menu">
+            <h1 class="admin__menu__MENU">MENU</h1>
+            <div>
+                <a href="admin.html">Sản phẩm</a>
+            </div>
+            <div>
+                <a href="donhang.html">Đơn hàng</a>
+            </div>
+            <div>
+                <a href="khachhang.html">Người dùng</a>
+            </div>
+            <div>
+                <a href="thongke.html">Thống kê</a>
+            </div>
+</div>
+            <div class="statistical">
+            <h1 style="margin-top: 10px;">Thống Kê</h1>
+            <div class="statistical__header">
+                <div class="statistical__header__div">
+                   <span>
+                    <input type="radio" name="chon" value="ten" id="ten" onclick="checkTen()" checked>
+                    Theo tên sản phẩm
+                </span>
+                <span>
+                    <input type="radio" name="chon" value="loai" id="loai" onclick="checkLoai()">
+                    Theo loại sản phẩm
+                </span> 
+                </div>
+                <div class="statistical__header__div">
+                    <input type="text" name="tenSp" class="statistical__header__input" id="tenSp" placeholder="Tên sản phẩm">
+                <select name="loaiSp" id="loaiSp" class="statistical__header__choose">
+                    <option value="samsung">SAMSUNG</option>
+                    <option value="xiaomi">XIAOMI</option>
+                </select>
+                </div>
+                
+                <div class="statistical__date"  >
+                    <label for="start" class="statistical__header__div">Từ ngày: </label>
+                    <input type="date" id="start" name="start" value="2023-11-24" min="2000-01-01" max="2030-1-1">
+                    <label for="start" class="statistical__header__div">đến </label>
+                    <input type="date" id="end" name="end" value="2023-11-30" min="2000-01-01" max="2030-1-1">
+                </div>
+                <a href="thongke.html"><button class="statistical__tk">Thống kê</button></a>
+            </div>
+            
+
+            <div>   
+            <table class="table">
+                <tr class="title">
+                    <th>ID</th>
+                    <th>Hình ảnh </th>
+                    <th>Tên sản phẩm</th>
+                    <th>Giá tiền</th>
+                    <th>Số lượng đã bán</th>
+                </tr>
+                <tr class="product">
+                    <td>#1</td>
+                    <td><img src="./asset/anh/avtdetail2.png" alt="" class="product__img"></td>
+                    <td>Samsung galaxy Z Flip5 5G 256GB</td>
+                    <td>15.990.000đ</td>
+                    <td>50</td>
+                </tr>
+                <tr class="product">
+                    <td>#2</td>
+                    <td><img src="./asset/anh/xiaomi 14.png" alt="" class="product__img"></td>
+                    <td>Xiaomi 14</td>
+                    <td>8.990.000đ</td>
+                    <td>50</td>
+                </tr>
+
+                <tr class="product">
+                    <td>#3</td>
+                    <td><img src="./asset/anh/xiaomi 14.png" alt="" class="product__img"></td>
+                    <td>Xiaomi 14</td>
+                    <td>8.990.000đ</td>
+                    <td>50</td>
+                </tr>
+
+                <tr class="product">
+                    <td>#4</td>
+                    <td><img src="./asset/anh/xiaomi 14.png" alt="" class="product__img"></td>
+                    <td>Xiaomi 14</td>
+                    <td>8.990.000đ</td>
+                    <td>50</td>
+                </tr>
+                <tr class="product">
+                    <td>#5</td>
+                    <td><img src="./asset/anh/xiaomi 14.png" alt="" class="product__img"></td>
+                    <td>Xiaomi 14</td>
+                    <td>8.990.000đ</td>
+                    <td>50</td>
+                </tr>
+                <tr class="product">
+                    <td>#6</td>
+                    <td><img src="./asset/anh/xiaomi 14.png" alt="" class="product__img"></td>
+                    <td>Xiaomi 14</td>
+                    <td>8.990.000đ</td>
+                    <td>50</td>
+                </tr>
+                <tr class="product">
+                    <td>#7</td>
+                    
+                    <td><img src="./asset/anh/xiaomi 14.png" alt="" class="product__img"></td>
+                    <td>Xiaomi 14</td>
+                    <td>8.990.000đ</td>
+                    <td>50</td>
+                </tr>
+                <tr class="product">
+                    <td>#8</td>
+                    <td><img src="./asset/anh/xiaomi 14.png" alt="" class="product__img"></td>
+                    <td>Xiaomi 14</td>
+                    <td>8.990.000đ</td>
+                    <td>50</td>
+                </tr>
+
+            </table>
+        </div>
+        <div class="pagination">
+            <a href="thongke.html">&lt;</a>
+            <a href="thongke.html">1</a>
+            <a href="thongke.html">2</a>
+            <a href="thongke.html">3</a>
+            <a href="thongke.html">4</a>
+            <a href="thongke.html">5</a>
+            <a href="thongke.html">...</a>
+            <a href="thongke.html">&gt;</a>
+        </div>
+
+        </div>
+</div>
+ <script>
+                function checkTen(){
+                tenSp.style.display="block";
+                loaiSp.style.display="none";
+            }
+
+            function checkLoai(){
+                tenSp.style.display="none";
+                loaiSp.style.display="block";
+            }
+
+</script>
+</body>
+</html>
