@@ -422,3 +422,30 @@ ul,li{
             border-radius: 3px;
             cursor: pointer;
         }
+        .order{
+            margin-left: 260px;
+        }
+        .in4__cus{
+            margin-top: 28px;
+        }
+        .table__cus{
+            margin-left: 50px;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .table__kh{
+            width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+margin-left: 83px;
+
+        }
+        .table__tk{
+            width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        margin-left: 70px;
+        
+        }
+    
